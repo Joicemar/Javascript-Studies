@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let personagem = {
+            nome: 'Bony',
+            idade: 90,
+            pais: 'Brasil',
+            motos: ['harley Fat-Boy', 'Virago'],
+            objetoInterno: {
+                dinheiro: 20,
+                figurinhas: 10,
+                cabelo: 0
+            }
+        }
+        personagem.nome = 'Pedro';
+        personagem.pais = 'Argentina';
+        document.write(personagem.nome, ", País: " + personagem.pais);
+        personagem.motos.push('Bros');
+        document.writeln(personagem.motos)
+    </script>
+</body>
+</html>

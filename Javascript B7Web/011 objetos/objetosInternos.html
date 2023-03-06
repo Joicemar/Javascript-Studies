@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+<body>
+    <style>
+        body { margin-left: 90px;}
+    </style>
+    <h1>Criação de Objetos javascript</h1>
+    <p><br>
+        <h3>Exemplo:</h3>
+        <pre> <!--usar a tag 'pre' para a formatação original do texto-->
+            <hr size="2" noshade color="black"> <!--Cria uma linha na horizontal-->
+            <code>
+                let personagem = {
+                    nome: 'Bony',
+                    idade: 90,
+                    pais: 'Brasil'
+                }
+                document.write(personagem.nome, ", País: " + personagem.pais);<br>
+            </code>
+        </pre>
+        <hr size="2" noshade color="black"> <!--Cria uma linha na horizontal-->
+        <br>Saída:
+    </p>
+    <script>
+        let personagem = {
+            nome: 'Bony',
+            idade: 90,
+            pais: 'Brasil',
+            motos: ['harley Fat-Boy', 'Virago'],
+            objetoInterno: {
+                dinheiro: 20,
+                figurinhas: 10,
+                cabelo: 0
+            }
+        }
+        document.write(personagem.nome, ", País: " + personagem.pais);
+    </script>
+
+</body>
+</html>

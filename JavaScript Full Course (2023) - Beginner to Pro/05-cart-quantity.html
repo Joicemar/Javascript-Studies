@@ -7,8 +7,17 @@
 </head>
 
 <body>
+    <span>...</span>
     <button onclick="
         console.log(`Cart Quantity: ${quantity}`)">Show Quantity
+    </button>
+    <button onclick="
+    quantity-=2;
+    console.log(`Cart Quantity: ${quantity}`)">-2
+    </button>
+    <button onclick="
+    quantity-=3;
+    console.log(`Cart Quantity: ${quantity}`)">-3
     </button>
     <button onclick="
         quantity++;
@@ -16,7 +25,7 @@
     </button>
     <button onclick="
         quantity+=2;
-        console.log(`Cart Quantity: ${quantity}`)">+2 
+        console.log(`Cart Quantity: ${quantity}`)">+2
     </button>
     <button onclick="
         quantity+=3;
@@ -30,7 +39,8 @@
 
     <script>
         let quantity = 0;
- 
+        let span = document.querySelector('span');
+
     </script>
 </body>
 

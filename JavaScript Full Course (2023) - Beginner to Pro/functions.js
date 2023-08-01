@@ -1,0 +1,40 @@
+/*
+== e /= conpara o valor e não considera o tipo
+=== e /== avalia se o tipo é igual e o valor
+*/
+/*
+console.log(5 > 3); //return true
+console.log(5 == "5.0"); //return true
+console.log(5 != "5.0"); //return false
+console.log(5 !== "5.0"); //return true
+console.log(5 === "5.0"); //return false
+
+if(20 >= 16){
+    console.log('You can drive');
+}else{
+    console.log('You can not drive');
+}
+*/
+/*
+console.log(true && true);
+console.log(0.2 >= 0 && 0.2 < 1 / 3);
+console.log(true || false);
+console.log(!false);
+*/
+console.log(!0);  //true
+
+console.log('text' / 5); //NaN
+
+const variable1 = undefined;
+console.log(variable1) //undefined
+//Ternario Operator
+const result = 0 ? 'truthy' : 'falsy';
+console.log(result);
+
+false && console.log('hello');
+
+const message = 5 && 'hello';
+console.log(message);
+
+const currency = undefined || 'USD';
+console.log(currency);

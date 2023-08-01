@@ -7,47 +7,11 @@
 
 <body>
     <p>Rock Paper Scissors</p>
-    <button onclick="
-        const computerMove = pickComputerMove();
+    <button onclick="playGame('Rock');">Rock</button>
 
-        if (computerMove === 'rock') {
-            result = 'Tie.';
-        } else if (computerMove === 'paper') {
-            result = 'You lose.';
-        } else if (computerMove === 'scissors') {
-            result = 'You win.';
-        }
+    <button onclick="playGame('Paper');">Paper</button>
 
-      alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
-    ">Rock</button>
-
-    <button onclick="
-        computerMove = pickComputerMove();
-
-        if (computerMove === 'rock') {
-            result = 'You win.';
-        } else if (computerMove === 'paper') {
-            result = 'Tie.';
-        } else if (computerMove === 'scissors') {
-            result = 'You lose.';
-        }
-
-      alert(`You picked paper. Computer picked ${computerMove}. ${result}`);
-    ">Paper</button>
-
-    <button onclick="
-        computerMove = pickComputerMove();
-
-        if (computerMove === 'rock') {
-            result = 'You lose.';
-        } else if (computerMove === 'paper') {
-            result = 'You win.';
-        } else if (computerMove === 'scissors') {
-            result = 'Tie.';
-        }
-
-      alert(`You picked scissors. Computer picked ${computerMove}. ${result}`);
-    ">Scissors</button>
+    <button onclick="playGame('Scissors');">Scissors</button>
 
     <script src="07-rock-paper-scissors.js"></script>
 </body>

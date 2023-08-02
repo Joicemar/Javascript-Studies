@@ -16,7 +16,7 @@ function playGame(playerMove) {
         }
         alert(`You picked scissors. Computer picked ${computerMove}. ${result}`);
     }
-    if (playerMove === 'Paper') {
+    else if (playerMove === 'Paper') {
         if (computerMove === 'rock') {
             result = 'You win.';
         } else if (computerMove === 'paper') {
@@ -26,7 +26,7 @@ function playGame(playerMove) {
         }
         alert(`You picked paper. Computer picked ${computerMove}. ${result}`);
     }
-    if (playerMove === 'Rock') {
+    else if(playerMove === 'Rock') {
         if (computerMove === 'rock') {
             result = 'Tie.';
         } else if (computerMove === 'paper') {
@@ -51,7 +51,6 @@ function pickComputerMove() {
     /*Uma das principais vantagens de usar variaveis em escopo de funções é que
     pode ser nomeadas com o mesmo nome de outro arquivo de código
     */
-
 }
 let Simom = 'Simom';
 let Joe = 'Joe';
@@ -59,6 +58,7 @@ let Doe = 'Doe';
 function greet(name){
     if(name === undefined){
         console.log('Hi there!')
+    }else{
+        console.log(`Hello ${Simom}`)
     }
-   console.log(`Hello ${Simom}`)
 }

@@ -29,23 +29,7 @@
     <button onclick="calculate()">=</button>
     <button onclick="appendToDisplay('+')">+</button>
     <br>
-    <script>
-        function appendToDisplay(value) {
-            const display = document.getElementById("display");
-            display.value += value;
-        }
-
-        function clearDisplay() {
-            const display = document.getElementById("display");
-            display.value = "";
-        }
-
-        function calculate() {
-            const display = document.getElementById("display");
-            const result = eval(display.value);
-            display.value = result;
-        }
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>

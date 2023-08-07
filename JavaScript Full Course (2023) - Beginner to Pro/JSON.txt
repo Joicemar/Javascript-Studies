@@ -1,0 +1,10 @@
+
+JSON: JavasScript Object Notation
+
+- a syntax similar to JavaScript Object
+- but has less features
+
+2. JSON does not support simgle quotes
+3. JSON does not support functions
+3.We use JSON - when we send data between computers
+4.When we store data

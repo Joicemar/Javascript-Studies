@@ -1,12 +1,36 @@
 /**
  * 
  *
- */
 const score = {
     wins: 0,
     losses: 0,
     ties: 0
 }
+*/
+//localStorage.setItem('message', 'hello')
+//Local Storage
+//console.log(localStorage.getItem('score'));
+
+let score = JSON.parse(localStorage.getItem('score')) || {
+    /**
+     * Caso o score não exista, seja false, 
+     * usará o modo shortcut para criar um objeto
+     */
+    wins: 0,
+    losses: 0,
+    ties: 0
+};
+/**
+ * 
+if(!score){
+    score = {
+        wins: 0,
+        losses: 0,
+        ties: 0
+    }
+}
+*/
+
 function playGame(playerMove) {
     const computerMove = pickComputerMove();
 
@@ -46,6 +70,9 @@ function playGame(playerMove) {
     }else{
         score.ties++;
     }
+    //Save progress
+    localStorage.setItem('score', JSON.stringify(score));
+
     alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
     Wins: ${score.wins}, Losses: ${score.losses}. Ties: ${score.ties}`);
     
@@ -55,6 +82,7 @@ function reset(){
     score.wins = 0;
     score.losses = 0;
     score.ties = 0;
+    localStorage.removeItem('score');
 }
 
 function pickComputerMove() {
@@ -84,3 +112,6 @@ function greet(name){
         console.log(`Hello ${Simom}`)
     }
 }
+/**
+ * null representa que não tem valor. 
+ */

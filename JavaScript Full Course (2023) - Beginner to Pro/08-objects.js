@@ -22,10 +22,11 @@ const product2 = {
     rating: {
         /** É um objeto.
          * Objeto Aninhado: rating: Uma propriedade que contém um objeto 
-         * aninhado com as propriedades start (valor 4.5) e count (valor 87).
+         * aninhado com suas propriedades
          */
         start: 4.5,
-        count: 87
+        count: 87,
+        name: 'something'
     },
     fun: function function1(){
         /** fun é um método. pois contém um método.
@@ -45,8 +46,17 @@ console.log(product2['name']);  //maneira dois de pegar o atributo do objeto
 console.log(product2['delivery-time']); //se não existir retorna indefinido
 
 console.log(product2.rating.count);
+console.log(product2.rating);
 console.log(product2.fun());
 
 console.log(typeof product2.rating);
 console.log(typeof product2.fun2);
 console.log(typeof console.log);
+
+//Javascript for JSON
+JSON.stringify(product2);
+console.log(JSON.stringify(product2));
+console.log(typeof JSON.stringify(product2));
+
+const jsonString = JSON.stringify(product2);
+console.log(JSON.parse(jsonString));

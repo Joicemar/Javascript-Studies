@@ -7,27 +7,11 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 
-<body class="day" id="day">
-    <button onclick="changeTheme()">theme</button>
+<body class="theme">
 
-    <script>
-        //JSON.parse transforma JSON em um objeto js
-        //Código a seguir, se o local storage não existr, criará um objeto
-        let localStatus = JSON.parse(localStorage.getItem('status') || {
-            theme: 'dark'
-        })
-        //Save progress
-        localStorage.setItem('score', JSON.stringify(score));
+    <button onclick="changeTheme()" class="btn">theme</button>
 
-        const fundo = document.getElementsByClassName('day'); // Removi o ponto antes de 'day'
-        function changeTheme() {
-            for (let i = 0; i < fundo.length; i++) {
-                fundo[i].classList.toggle('dark'); // Usei toggle em vez de add para alternar entre os temas
-            }
-            console.log('click');
-        }
-
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>

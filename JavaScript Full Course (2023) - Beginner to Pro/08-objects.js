@@ -116,7 +116,17 @@ const object5 = {
          *This shortcut is called the shorthand method syntax
          */
         console.log('method');
-    };
+    }
 };
 console.log(object5);
 object5.method();
+/**
+    In this lesson
+ * 
+    1.Objects = group related values together
+    2.Added a score Rock Paper Scissors
+    3.Built-in objects (JSON, localStorage)
+    4.More details (null, auto-boxing, references)
+    5.Shortcuts (destructuring, shorthand property,
+        shorthand method)
+*/

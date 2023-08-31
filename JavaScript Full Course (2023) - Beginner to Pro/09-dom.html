@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>dom</title>
+</head>
+
+<body>
+    <button>Hello</button>
+
+    <script>
+        //O objeto document modela o website, por isso é chamado de model 
+        //Document Object Model DOM
+        document.body.innerHTML = "teste"
+        document.title = "Good Job!"
+
+        console.log(document.body);
+        console.log(typeof document.body);
+        console.log( document.body.innerHTML);
+        document.body.innerHTML = '<button>Good Job!</button>'
+    </script>
+</body>
+
+</html>

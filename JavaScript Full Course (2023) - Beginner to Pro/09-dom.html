@@ -5,19 +5,24 @@
     <title>dom</title>
 </head>
 
-<body>
-    <button>Hello</button>
-
+<body style="background-color: #c5c5c5;">
+    <button>Hello</button> 
+    <button class="js-button">Second</button>
     <script>
         //O objeto document modela o website, por isso é chamado de model 
         //Document Object Model DOM
+        document.querySelector('button').innerHTML = 'Changed';
+        const btn2 = document.querySelector('.js-button');
+        console.log(btn2);
+        /*
         document.body.innerHTML = "teste"
         document.title = "Good Job!"
 
         console.log(document.body);
         console.log(typeof document.body);
-        console.log( document.body.innerHTML);
         document.body.innerHTML = '<button>Good Job!</button>'
+        console.log(document.body.innerHTML);
+        */
     </script>
 </body>
 

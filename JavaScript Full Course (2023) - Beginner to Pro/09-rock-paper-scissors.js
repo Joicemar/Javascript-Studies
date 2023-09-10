@@ -31,9 +31,11 @@ if(!score){
 }
 */
 let result = '';
+let move = '';
 
 function playGame(playerMove) {
     const computerMove = pickComputerMove();
+    move = playerMove;
 
     if (playerMove === 'Scissors') {
         if (computerMove === 'rock') {
@@ -73,7 +75,18 @@ function playGame(playerMove) {
     //Save progress
     localStorage.setItem('score', JSON.stringify(score));
 
+    gameResult();
+    gameMoves();
     updateScoreElements();
+}
+
+function gameResult(){
+    document.querySelector('.js-result')
+    .innerHTML = result;
+}
+function gameMoves(){
+    document.querySelector('.js-moves')
+    .innerHTML = `You picked: ${move} Computer picked: ${pickComputerMove()}`;
 }
 
 function updateScoreElements(){
@@ -91,7 +104,9 @@ function reset(){
     localStorage.removeItem('score');
 
 }
+function playerMove(){
 
+}
 function pickComputerMove() {
     const randomNumber = Math.random();
     greet();

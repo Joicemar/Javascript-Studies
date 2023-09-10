@@ -35,7 +35,10 @@
             if (cost < 40) {
                 cost = cost + 10;
             }
-            document.querySelector('.total-cost').innerHTML = `$${cost}`;
+            //Deixa com só duas casas decimais
+            document.querySelector('.total-cost').innerHTML = `$${cost.toFixed(2)}`;
+            //Ou para moeda local.
+            document.querySelector('.total-cost').innerHTML = `${cost.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`;
         }
         function subscribe() {
             const btn = document.getElementById('subscrive_btn');

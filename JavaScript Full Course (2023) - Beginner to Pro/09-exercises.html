@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Exercise</title>
+</head>
+
+<body>
+    <input type="text" class="name_input" onkeydown="checkKey(event)">
+
+    <button onclick="showText();" >Submit</button>
+    
+    <p class="text">Your name is: </p>
+
+    <script>
+        function checkKey(event){
+            if(event.key === 'Enter'){
+                showText();
+            }
+        }
+        function showText() {
+            const name = document.querySelector('.name_input').value;
+
+            const textElement = document.querySelector('.text');
+            
+            const textNode = document.createTextNode(name);
+
+            document.querySelector('.text')
+            .innerHTML = "Your name is: "+name;
+            //textElement.appendChild(textNode);
+        }
+
+    </script>
+</body>
+
+</html>
